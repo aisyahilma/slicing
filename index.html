@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.121 17.804A13.937 13.937 0 0112 15c3.086 0 5.913.928 8.879 2.804M15 12a3 3 0 11-6 0 3 3 0 016 0zm6 10a9 9 0 10-18 0h18z"
+            />
+          </svg>
+          <span class="text-white font-semibold">The Malaka</span>
+        </div>
+
+        <nav class="flex space-x-6">
+          <a href="#">Top</a>
+          <a href="#">For Everyone</a>
+          <a href="#">Benefit</a>
+          <a href="#">Preview</a>
+          <a href="#">Penulis</a>
+        </nav>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Download
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="bg-gray-900 py-20">
+      <div
+        class="container mx-auto px-4 flex flex-col lg:flex-row items-center"
+      >
+        <!-- Text Content -->
+        <div class="lg:w-1/2 text-white space-y-6 lg:pr-12">
+          <!-- Title and Subtitle -->
+          <h3 class="text-4xl lg:text-5xl font-bold leading-tight">
+            Sebuah framework CSS untuk developer yang memiliki phobia terhadap
+            CSS
+          </h3>
+          <p class="text-gray-400">
+            Buku ini akan mengajarkan kamu konsep utility-first pada CSS dan
+            dilatih dengan menerapkan sebuah website yang responsif dengan
+            Tailwind CSS.
+          </p>
+
+          <!-- Button and Sold Info -->
+          <div class="flex items-center space-x-6">
+            <button
+              class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out"
+            >
+              Beli Sekarang
+            </button>
+
+            <div class="text-gray-400">
+              <p>Sudah Terjual</p>
+              <p class="text-2xl font-bold">501,234+</p>
+            </div>
+          </div>
+
+          <!-- Technology Used Icons -->
+          <div class="mt-6">
+            <p class="text-gray-400 mb-2">Teknologi yang digunakan</p>
+            <div class="flex space-x-4 text-2xl">
+              <!-- Icons (use relevant icons here) -->
+              <i class="fab fa-html5 text-orange-500"></i>
+              <i class="fab fa-css3-alt text-blue-500"></i>
+              <i class="fab fa-js-square text-yellow-400"></i>
+              <i class="fab fa-react text-teal-500"></i>
+              <i class="fab fa-node-js text-green-500"></i>
+              <i class="fab fa-vuejs text-green-400"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Image -->
+        <div class="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+          <img
+            src="path/to/book-image.png"
+            alt="Tailwind CSS Book Cover"
+            class="w-3/4 lg:w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Audience Section -->
+    <body class="bg-gray-900 text-gray-300">
+
+      <!-- Main container -->
+      <div class="max-w-4xl mx-auto px-6 py-12">
+          
+          <!-- Header section -->
+          <div class="text-center mb-10">
+              <p class="text-teal-400 uppercase font-semibold text-sm tracking-wide">Buku Ini Untuk Siapa</p>
+              <h1 class="text-3xl font-bold">Buku yang cocok dibaca untuk front-end dan back-end, bahkan UI designer!</h1>
+              <p class="mt-4 text-gray-400">
+                  Buku ini bukan hanya untuk front-end developer yang ingin meningkatkan skill, buku ini juga cocok untuk back-end developer dan UI designer agar dapat menulis style tanpa harus menulis kode CSS dan tanpa mengandalkan front-end developer!
+              </p>
+          </div>
+  
+          <!-- Cards section -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+              <!-- Card 1 -->
+              <div class="bg-purple-100 p-6 rounded-lg">
+                  <div class="bg-white h-32 mb-4 rounded-lg"></div>
+                  <p class="text-gray-700">Tailwind hadir dengan konsep utility-first. Utility-first artinya banyak class-class kecil yang bisa digabung untuk menjadi sebuah UI.</p>
+              </div>
+  
+              <!-- Card 2 -->
+              <div class="bg-green-100 p-6 rounded-lg">
+                  <div class="bg-gray-800 h-32 mb-4 rounded-lg"></div>
+                  <p class="text-gray-700">JIT engine akan men-generate utility-class yang kita gunakan saja. Ini akan membuat pengalaman pengembangan semakin baik.</p>
+              </div>
+  
+              <!-- Card 3 -->
+              <div class="bg-blue-100 p-6 rounded-lg">
+                  <div class="bg-white h-32 mb-4 rounded-lg"></div>
+                  <p class="text-gray-700">Tailwind tidak memiliki pre-desain komponen apapun, ini membuat desain website yang kita buat menjadi unik.</p>
+              </div>
+  
+          </div>
+      
+      </div>
+
+<!-- Bagian Kata Pengantar -->
+<section class="bg-teal-500 text-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Bagian Kiri: Kata Pengantar -->
+      <div>
+        <h3 class="uppercase text-sm font-semibold mb-2">Buku Ini Untuk Siapa</h3>
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Kata Pengantar Dari Penulis Buku</h2>
+
+        <!-- Profil Penulis -->
+        <div class="flex items-center space-x-4">
+          <img
+            src="https://via.placeholder.com/60"
+            alt="Foto Penulis"
+            class="w-16 h-16 rounded-full"
+          />
+          <div>
+            <h4 class="text-lg font-semibold">Muhamad Nauval Azhar</h4>
+            <p class="text-sm text-gray-200">@mhdnauvalazhar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Kanan: Deskripsi -->
+      <div>
+        <p class="text-lg leading-relaxed">
+          "Tailwind sangat memungkinkan kamu untuk membangun sebuah desain website yang unik dan tanpa kamu perlu menulis kode CSS sedikitpun. Mungkin kamu akan berpikir bahwa kamu akan membutuhkan waktu yang lebih lama ketika membangun sebuah website dengan utility-first framework ketimbang dengan framework UIkit. Ya, benar. Karena kamu harus memikirkan desain dan mengimplementasikan desain tersebut dari awal sendiri. Namun, kamu perlu ingat manfaat-manfaat yang diberikan oleh utility-first framework, sehingga kamu dapat mempertimbangkannya.
+          <br><br>
+          Dalam buku ini, kita akan mempelajari framework Tailwind CSS. Mulai dari konsep, workflow, hingga membuat sebuah website responsif dengan TailwindCSS. Buku ini tidak untuk semua orang, setidaknya kamu memahami cara mengoperasikan komputer, memahami HTML, memahami CSS, atau bisa dibilang kamu sudah pernah membangun website sebelumnya dan ingin mempelajari hal baru untuk meningkatkan skill."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <body class="bg-gray-50 font-sans antialiased">
+      <!DOCTYPE html>
+      <html lang="id">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Buku Tailwind CSS</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body class="bg-gray-50 font-sans antialiased">
+      
+          <!-- Bagian Manfaat Buku -->
+          <section class="container mx-auto p-6">
+              <div class="flex flex-col lg:flex-row items-center justify-between">
+                  <!-- Keterangan Manfaat -->
+                  <div class="lg:w-1/2 mb-10 lg:mb-0">
+                      <h2 class="text-teal-600 text-3xl font-bold mb-4">Manfaat yang kamu dapatkan</h2>
+                      <p class="mb-6">Buku ini cocok untuk semua yang ingin mempelajari front-end development secara lebih dalam dengan Tailwind CSS.</p>
+                      <ul class="space-y-4">
+                          <li class="flex items-start">
+                              <span class="text-green-500 mr-3">✓</span> Cocok untuk front-end developer
+                          </li>
+                          <li class="flex items-start">
+                              <span class="text-green-500 mr-3">✓</span> Berdasarkan dokumentasi asli Tailwind CSS
+                          </li>
+                          <li class="flex items-start">
+                              <span class="text-green-500 mr-3">✓</span> Mudah dipahami untuk UI designer
+                          </li>
+                          <li class="flex items-start">
+                              <span class="text-green-500 mr-3">✓</span> Studi kasus membangun website responsif
+                          </li>
+                      </ul>
+                  </div>
+      
+                  <!-- Gambar dan Statistik Buku -->
+                  <div class="lg:w-1/2 flex flex-col items-center">
+                      <img src="Frame 410.png" alt="Cover Buku" class="w-64 mb-6 rounded-lg shadow-lg">
+                      <div class="flex justify-around w-full text-center">
+                          <div>
+                              <p class="text-2xl font-bold text-teal-600">19</p>
+                              <p class="text-gray-600">Jumlah Chapter</p>
+                          </div>
+                          <div>
+                              <p class="text-2xl font-bold text-teal-600">253</p>
+                              <p class="text-gray-600">Jumlah Halaman</p>
+                          </div>
+                          <div>
+                              <p class="text-2xl font-bold text-teal-600">60</p>
+                              <p class="text-gray-600">Hari Menulis</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      <!-- Bagian Live Demo dan Komunitas -->
+<section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-start lg:space-x-12">
+      <!-- Book Image -->
+      <div class="lg:w-1/2 mb-8 lg:mb-0">
+        <img
+          src="case-study-image.jpg"
+          alt="Case Study"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+
+      <!-- Resources List & Description -->
+      <div class="lg:w-1/2 space-y-8">
+        <!-- Bagian Deskripsi -->
+        <div class="p-6">
+          <h2 class="text-xl font-semibold text-teal-600 mb-4">--- SELAIN ITU</h2>
+          <h2 class="text-2xl text-gray-900 mb-4">
+            Buku dengan studi kasus nyata, juga komunitas yang ramah.
+          </h2>
+          <p class="text-gray-700 mb-8">
+            Buku dengan studi kasus nyata, juga komunitas yang ramah. Buku ini diakhiri dengan membangun website yang responsif dengan Tailwind. Selain itu, kamu juga dapat bergabung ke komunitas untuk bertanya ketika mengalami kesulitan.
+          </p>
+        </div>
+
+        <!-- Kartu 1: Live Demo Project -->
+        <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-lg border border-gray-200">
+          <span class="bg-teal-500 text-white p-3 rounded-full">📄</span>
+          <div class="flex-grow">
+            <h3 class="text-lg font-semibold text-black">Live Demo Project</h3>
+            <p class="text-gray-700">Lihat live demo project yang akan kamu buat di akhir buku ini.</p>
+          </div>
+          <a href="#" class="text-teal-600 hover:text-teal-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Kartu 2: Dukungan Komunitas -->
+        <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-lg border border-gray-200">
+          <span class="bg-teal-500 text-white p-3 rounded-full">💬</span>
+          <div class="flex-grow">
+            <h3 class="text-lg font-semibold text-black">Dukungan Komunitas</h3>
+            <p class="text-gray-700">Bergabunglah di Discord untuk diskusi dan dukungan dengan teman-teman lainnya.</p>
+          </div>
+          <a href="#" class="text-teal-600 hover:text-teal-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+      
+          <!-- Bagian Pratinjau Buku -->
+          <section class="container mx-auto p-6 text-center">
+            <a
+            href="#"
+            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full inline-block mb-8"
+        >
+            PRATINJAU
+        </a>
+          <h2 class="text-2xl text-teal-600 mb-4">Sebelum membeli, kamu dapat melihat beberapa halaman pratinjau isi di dalam buku ini</h2>
+              <p class="mb-6">Klik gambar halaman untuk melihat pratinjau isi buku.</p>
+              <div class="flex overflow-x-scroll">
+                  <img src="Frame 410.png" alt="Pratinjau Halaman Buku" class="w-48 h-64 mx-2 rounded-lg shadow-lg">
+                  <img src="Frame 410.png" alt="Pratinjau Halaman Buku" class="w-48 h-64 mx-2 rounded-lg shadow-lg">
+                  <img src="Frame 410.png" alt="Pratinjau Halaman Buku" class="w-48 h-64 mx-2 rounded-lg shadow-lg">
+              </div>
+          </section>
+      
+      </body>
+      </html>
+      
+    <!-- Additional Resources Section -->
+    <section class="bg-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold">
+          Buku dengan studi kasus nyata, juga komunitas yang ramah
+        </h2>
+        <p class="text-lg mt-4 mb-8">
+          Dilengkapi dengan panduan membangun website yang responsive dengan
+          Tailwind. Selain itu, kamu juga dapat bergabung ke komunitas untuk
+          bertanya seputar Tailwind.
+        </p>
+
+
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-12 mt-8">
+          <!-- Book Image -->
+          <div class="lg:w-1/2 mb-8 lg:mb-0">
+            <img
+              src="case-study-image.jpg"
+              alt="Case Study"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+    
+          <!-- Resources List -->
+          <div class="lg:w-1/2 space-y-6">
+            <!-- Kartu 1: Live Demo Project -->
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-lg border border-gray-200">
+              <span class="bg-teal-500 text-white p-3 rounded-full">📄</span>
+              <div class="flex-grow">
+                <h3 class="text-lg font-semibold text-black">Live Demo Project</h3>
+                <p class="text-gray-700">Lihat live demo project yang akan kamu buat di akhir buku ini.</p>
+              </div>
+              <a href="#" class="text-teal-600 hover:text-teal-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+    
+            <!-- Kartu 2: Dukungan Komunitas -->
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-lg border border-gray-200">
+              <span class="bg-teal-500 text-white p-3 rounded-full">💬</span>
+              <div class="flex-grow">
+                <h3 class="text-lg font-semibold text-black">Dukungan Komunitas</h3>
+                <p class="text-gray-700">Bergabunglah di Discord untuk diskusi dan dukungan dengan teman-teman lainnya.</p>
+              </div>
+              <a href="#" class="text-teal-600 hover:text-teal-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-900 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <a
+          href="#"
+          class="bg-gray-500 text-blue-500 font-semibold py-2 px-6 rounded-full inline-block mb-8"
+        >
+          HARGA BUKU
+        </a>
+        <h2 class="text-3xl font-bold mb-6">
+          Kamu dapat membeli buku fisik atau buku elektronik untuk dibaca di
+          perangkat kamu
+        </h2>
+        <p class="text-gray-400 mb-12">
+          Dilarang memperjualbelikan atau memperbanyak tanpa seizin penulis. Hak
+          cipta dilindungi undang-undang.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Digital Book -->
+          <div
+            class="bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8 w-full max-w-sm mx-auto text-center"
+          >
+            <h3 class="text-2xl font-bold mb-2">Buku Digital</h3>
+            <p class="text-3xl font-bold mt-2 mb-4">Rp100.000</p>
+            <ul class="space-y-3 mb-6 text-left mx-auto max-w-[12rem]">
+              <li>❌ Buku fisik</li>
+              <li>✅ Mendapat pembaruan</li>
+              <li>✅ Akses digital</li>
+              <li>✅ Buku lengkap</li>
+              <li>✅ Mendapat pembaruan</li>
+              <li>✅ Dapat diunduh</li>
+            </ul>
+            <a
+              href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full block"
+            >
+              Beli Sekarang
+            </a>
+          </div>
+
+          <!-- Physical Book -->
+          <div
+            class="bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8 w-full max-w-sm mx-auto text-center"
+          >
+            <h3 class="text-2xl font-bold mb-2">Buku Fisik</h3>
+            <p class="text-3xl font-bold mt-2 mb-4">Rp185.000</p>
+            <ul class="space-y-3 mb-6 text-left mx-auto max-w-[12rem]">
+              <li>✅ Buku fisik</li>
+              <li>✅ Mendapat pembaruan</li>
+              <li>❌ Akses digital</li>
+              <li>✅ Buku lengkap</li>
+              <li>❌ Mendapat pembaruan</li>
+              <li>✅ Dapat diunduh</li>
+            </ul>
+            <a
+              href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full block"
+            >
+              Beli Sekarang
+            </a>
+          </div>
+
+          <!-- Digital + Physical Book -->
+          <div
+            class="bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8 w-full max-w-sm mx-auto text-center"
+          >
+            <h3 class="text-2xl font-bold mb-2">Buku Digital + Fisik</h3>
+            <p class="text-3xl font-bold mt-2 mb-4">Rp250.000</p>
+            <ul class="space-y-3 mb-6 text-left mx-auto max-w-[12rem]">
+              <li>✅ Buku fisik</li>
+              <li>✅ Mendapat pembaruan</li>
+              <li>✅ Akses digital</li>
+              <li>✅ Buku lengkap</li>
+              <li>✅ Mendapat pembaruan</li>
+              <li>✅ Dapat diunduh</li>
+            </ul>
+            <a
+              href="#"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full block"
+            >
+              Beli Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <p class="text-sm text-gray-300 text-center">
+        * Buku digital akan dikirimkan ke alamat email kamu setelah pemesanan.
+        <br />
+        * Buku fisik akan dikirim dalam waktu 7 hari setelah pemesanan.
+      </p>
+    </section>
+  </body>
+</html>
